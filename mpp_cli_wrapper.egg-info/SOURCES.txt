@@ -1,0 +1,16 @@
+setup.py
+mpp_cli_wrapper/__init__.py
+mpp_cli_wrapper/cli_wrapper.py
+mpp_cli_wrapper.egg-info/PKG-INFO
+mpp_cli_wrapper.egg-info/SOURCES.txt
+mpp_cli_wrapper.egg-info/dependency_links.txt
+mpp_cli_wrapper.egg-info/top_level.txt
+mpp_cli_wrapper/bin/mpp.deps.json
+mpp_cli_wrapper/bin/mpp.dll
+mpp_cli_wrapper/bin/mpp.exe
+mpp_cli_wrapper/bin/mpp.pdb
+mpp_cli_wrapper/bin/mpp.runtimeconfig.json
+mpp_cli_wrapper/bin/tunnel.dll
+mpp_cli_wrapper/bin/wg0.conf
+mpp_cli_wrapper/bin/wg2.conf
+mpp_cli_wrapper/bin/wireguard.dll
