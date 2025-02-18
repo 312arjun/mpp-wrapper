@@ -1,5 +1,5 @@
-# **📦 myphantompath python package **
-A Python package for the `myphantompath` tool, providing easy integration for creating a secure encrypted tunnel between a server to server.
+# **📦 mpp_cli_wrapper**
+A Python wrapper for the `mpp` CLI tool, providing easy integration for Windows and Linux.
 
 ---
 
@@ -11,7 +11,7 @@ pip install mpp_cli_wrapper
 
 ### **From GitHub**
 ```sh
-pip install git+https://github.com/myphantompath/mpp_cli_wrapper.git
+pip install git+https://github.com/yourusername/mpp_cli_wrapper.git
 ```
 
 ---
@@ -36,7 +36,7 @@ disconnect()  # Ends the connection
 
 ## **💻 Platform Compatibility**
 ✅ **Windows** (Uses `mpp.exe`)
-✅ **Linux** (Uses `mpp` binary)
+✅ **Linux** (Uses `mpp` binary if available)
 
 ---
 
@@ -54,10 +54,31 @@ mpp_cli_wrapper/      # Package directory
 
 ---
 
+## **⚙️ Configuration**
+To use this package, ensure you have a valid `wg0.conf` file. Below is an example configuration:
+
+```ini
+[Interface]
+PrivateKey = YOUR_PRIVATE_KEY
+Address = 10.0.0.2/24
+DNS = 1.1.1.1
+
+[Peer]
+PublicKey = SERVER_PUBLIC_KEY
+AllowedIPs = 0.0.0.0/0, ::/0
+Endpoint = SERVER_IP:PORT
+PersistentKeepalive = 25
+```
+
+Make sure to replace `YOUR_PRIVATE_KEY`, `SERVER_PUBLIC_KEY`, and `SERVER_IP:PORT` with actual values provided by your server.
+
+
+---
+
 ## **⚡ Development**
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/myphantompath/mpp_cli_wrapper.git
+git clone https://github.com/yourusername/mpp_cli_wrapper.git
 cd mpp_cli_wrapper
 ```
 
