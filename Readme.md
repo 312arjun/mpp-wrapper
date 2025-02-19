@@ -1,17 +1,17 @@
-# **📦 mpp_cli_wrapper**
-A Python wrapper for the `mpp` CLI tool, providing easy integration for Windows and Linux.
+# **📦 myphantompath **
+A Python wrapper for the server to server secure communication, providing easy integration for Windows and Linux.
 
 ---
 
 ## **🚀 Installation**
 ### **From PyPI**
 ```sh
-pip install mpp_cli_wrapper
+pip install mpp_wrapper
 ```
 
 ### **From GitHub**
 ```sh
-pip install git+https://github.com/yourusername/mpp_cli_wrapper.git
+pip install git+https://github.com/myphantompath/mpp_wrapper.git
 ```
 
 ---
@@ -19,7 +19,7 @@ pip install git+https://github.com/yourusername/mpp_cli_wrapper.git
 ## **🔧 Usage**
 ### **Import the package**
 ```python
-from mpp_cli_wrapper import connect, disconnect
+from mpp_wrapper import connect, disconnect
 ```
 
 ### **Connect**
@@ -42,7 +42,7 @@ disconnect()  # Ends the connection
 
 ## **📁 Project Structure**
 ```
-mpp_cli_wrapper/      # Package directory
+mpp_wrapper/      # Package directory
 │── bin/              # Contains CLI binaries (mpp.exe, mpp)
 │── __init__.py       # Makes this a Python package
 │── cli_wrapper.py    # Python wrapper for CLI
@@ -78,8 +78,8 @@ Make sure to replace `YOUR_PRIVATE_KEY`, `SERVER_PUBLIC_KEY`, and `SERVER_IP:POR
 ## **⚡ Development**
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/mpp_cli_wrapper.git
-cd mpp_cli_wrapper
+git clone https://github.com/myphantompath/mpp_wrapper.git
+cd mpp_wrapper
 ```
 
 ### **Build & Publish (For Maintainers)**
@@ -93,12 +93,12 @@ twine upload dist/*
 # mpp-node
 
 ## Introduction
-`mpp-node` is a Node.js package designed to establish a secure tunnel for safe communication between the client and server. It includes two main functions:
+`mpp-node` is a Node.js package designed to establish a secure tunnel for safe communication between server to server. It includes two main functions:
 
 - `connect()`: Establishes a tunnel.
 - `disconnect()`: Deletes the tunnel.
 
-Additionally, the package requires a file named `wg0` to be present wherever `mpp-node` is imported.
+Additionally, the package requires a file named `wg0.conf` to be present wherever `mpp-node` is imported.
 
 This guide will help you clone the repository, set up a local version using `npm link`, and attach it to other Node.js projects.
 
@@ -107,7 +107,7 @@ This guide will help you clone the repository, set up a local version using `npm
 ### Step 1: Clone the Repository
 First, clone the repository from GitHub:
 ```sh
-git clone https://github.com/your-repo/mpp-node.git
+git clone https://github.com/myphantompath/mpp-node.git
 ```
 
 ### Step 2: Navigate into the Project Directory
@@ -134,8 +134,8 @@ npm link mpp-node
 ```
 This will create a symbolic link to the globally linked `mpp-node` package.
 
-### Step 3: Ensure `wg0` File is Present
-Before using `mpp-node`, make sure a file named `wg0` is present in the project directory.
+### Step 3: Ensure `wg0.conf` File is Present
+Before using `mpp-node`, make sure a file named `wg0.conf` is present in the project directory.
 
 ### Step 4: Use the Package
 Now, you can use `mpp-node` in your project as if it were installed from npm:
